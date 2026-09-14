@@ -54,6 +54,14 @@ nav {
         font-size: 48px;
         letter-spacing: 1px;
     }
+
+    .pedido-card {
+        padding: 22px 18px;
+    }
+
+    .pedido-link {
+        margin: 0 auto;
+    }
 }
 nav a{
     text-decoration: none; /* remove o sublinhado padrão*/
@@ -102,7 +110,65 @@ nav a:hover { /* Aplica estilização quando o ponteiro do mouse está sobre o l
     flex-direction: column;
 }
 
+.pedido-section {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    padding: 0 20px 20px;
+}
 
+.pedido-card {
+    background: linear-gradient(135deg, #fff2f5 0%, #ffffff 100%);
+    border: 1px solid #f4d7dc;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(194, 135, 143, 0.12);
+    padding: 30px;
+}
+
+.pedido-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pedido-tag {
+    display: inline-block;
+    width: fit-content;
+    background: #fbe7eb;
+    color: #b5606f;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.pedido-titulo {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.pedido-texto {
+    text-align: center;
+    color: #5d4d52;
+    margin-bottom: 20px;
+    max-width: 700px;
+}
+
+.pedido-link {
+    width: fit-content;
+}
+
+.pedido-nota {
+    margin-top: 18px;
+    text-align: center;
+    font-weight: 600;
+    color: #7e5f68;
+    line-height: 1.6;
+}
 
 footer{
     background-color: black;
