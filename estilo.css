@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* altura e largura incluir dentro do padding e borda de calculo de tamanho*/
+}
+
+body{
+    background-color: #fff7f8;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden; /* esconde a barra de rolagem horizontal*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+header{
+    background-color: white;
+    display: grid; /* Organiza os itens dentro de uma tabela/grade */
+    grid-template-columns: auto 1fr auto; /* Cria 3 colunas, 2 de tamanho automatico e 1 de tamanho livre*/
+    align-items: center;
+    padding: 12px 10px 12px 3px;/* preenchimento cima e baixo de 12px e dos lados 3px*/
+    flex-wrap: wrap; /* Permite que os itens do cabeçalho passem para outra linha em telas menores*/
+    justify-content: center; /* Centraliza os itens do cabeçalho horizontalmente*/
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+.nomedosite{
+    margin: 0;
+    font-size: 70px;/* tamanho da fonte quando a tela é grande, usarei rem ao invés de px por ser mais responsivo*/
+    text-shadow: 3px 3px 3px #a39b9b;
+    font-family: "Chaucer", Georgia, serif;
+    font-weight: 800; /* grossura da fonte*/
+    letter-spacing: 2px; /* espaçamento entre as letras, utilizando em porque é mais responsivo. */
+    color: #c2878f;
+    justify-self: center; /* Centraliza apenas este item dentro da propria tabela*/
+    
+}
+
+nav a{
+    text-decoration: none; /* remove o sublinhado padrão*/
+    color: #c2878f;
+    font-weight: 800;
+    margin-left: 25px;/* Cria espaço à esquerda entre cada link do menu*/
+
+}
+
+nav a:hover { /* Aplica estilização quando o ponteiro do mouse está sobre o link*/
+    color: palevioletred;
+
+}
+
+.banner {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    justify-self: center;
+}
+
+.destaque{
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.sobre {
+    padding-top: 0;
+}
+
+.produtos{
+    display: flex; /*organiza os cards em flexbox*/
+    flex-wrap: wrap;/*permite que os cards passem para outra linha em telas menoress*/
+    gap: 20px;/*espaço entre os cards, horizontal e vertical*/
+    justify-content: center;
+    margin-top: 30px;
+}
+.produto{
+    background-color: white;
+    box-shadow: 5px 5px 20px rgb(124, 124, 126);
+    padding: 20px;
+    border-radius: 25px;
+    width: min(260px, 100%); /*largura do card será de 260px ou 100% da tela, o que for menor*/
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+
+
+}
+.produto-imagem{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+
+
+input{
+    width:100%;
+    padding: 10px;
+    border:1px solid  ;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+
+    
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    min-height: 52px;
+    padding: 14px 20px;
+    border-radius: 999px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(231, 128, 167, 0.35);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button {
+    background-color: #c2878f;
+}
+
+.instagram-button {
+    background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+.social-button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+}
+
+.whatsapp-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 18px;
+    border-radius: 999px;
+    background-color: #c2878f;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(231, 128, 167, 0.35);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    background-color: #e57cc2;
+    transform: translateY(-2px);
+}
+
+.produto-whatsapp {
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+
+.titulo{
+    text-align: center;
+    color: #a39b9b;
+    padding-bottom: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.2rem;
+}
+
+.texto{
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.espaço{
+    padding-bottom: 15px;
+
+}
+#sobre{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#descrição{
+    padding-bottom: 15px;
+    
+    margin-left: 50px;
+    margin-right: 50px;
+}
