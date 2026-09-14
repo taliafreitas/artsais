@@ -49,7 +49,12 @@ nav {
     justify-self: center; /* Centraliza apenas este item dentro da propria tabela*/
     
 }
-
+@media (max-width: 768px) {
+    .nomesite {
+        font-size: 48px;
+        letter-spacing: 1px;
+    }
+}
 nav a{
     text-decoration: none; /* remove o sublinhado padrão*/
     color: #c2878f;
